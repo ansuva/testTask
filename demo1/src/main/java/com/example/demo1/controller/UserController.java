@@ -2,7 +2,6 @@ package com.example.demo1.controller;
 
 import com.example.demo1.model.User;
 import com.example.demo1.service.UserService;
-import com.example.demo1.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

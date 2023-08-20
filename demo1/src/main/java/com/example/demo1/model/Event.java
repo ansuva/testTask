@@ -22,24 +22,17 @@ import java.util.List;
 @Component
 @Table(name = "events")
 public class Event {
-
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
-
-    //@NotEmpty
     @Column(name = "description")
     String description;
-
     @JoinColumn(name = "event_id", referencedColumnName = "id")
     @OneToMany(cascade = CascadeType.ALL)
     public List<User> users;
-
-    //@NotEmpty
     @Column(name = "date_event")
     private String dateEvent;
-
     public Event(String description, String dateEvent) {
         this.description = description;
         this.dateEvent = LocalDateTime.now().toString();

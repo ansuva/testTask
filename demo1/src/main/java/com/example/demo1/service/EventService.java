@@ -1,8 +1,6 @@
 package com.example.demo1.service;
 
 import com.example.demo1.model.Event;
-import com.example.demo1.model.User;
-
 import java.util.List;
 import java.util.Optional;
 
